@@ -1,0 +1,24 @@
+/* 微出国·学 · RESP 从业双证 · 离线缓存。版本＝内容哈希，新发布自动汰旧。 */
+const VERSION = 'vv-resp-2e46b872020b';
+const PRECACHE = ["./assets/app.js", "./assets/decks/conduct-kyc-ethics.json", "./assets/decks/cst-product-line.json", "./assets/decks/disclosure-and-fees.json", "./assets/decks/economy-markets-primer.json", "./assets/decks/grants-2026.json", "./assets/decks/regulatory-map.json", "./assets/decks/resp-tax-machine.json", "./assets/decks/saving-for-education.json", "./assets/decks/scholarship-plan-mechanics.json", "./assets/decks.json", "./assets/fsrs.mjs", "./assets/learning-data.mjs", "./assets/manifest.json", "./assets/questions.json", "./assets/search-index.json", "./assets/slides.js", "./assets/style.css", "./docs/conduct-kyc-ethics.html", "./docs/cst-product-line.html", "./docs/disclosure-and-fees.html", "./docs/economy-markets-primer.html", "./docs/grants-2026.html", "./docs/index.html", "./docs/regulatory-map.html", "./docs/resp-tax-machine.html", "./docs/saving-for-education.html", "./docs/scholarship-plan-mechanics.html", "./drill.html", "./exam.html", "./index.html", "./progress.html", "./slides.html", "./manifest.webmanifest"];
+self.addEventListener('install', (e) => {
+  e.waitUntil(caches.open(VERSION).then(async (c) => {
+    for (const u of PRECACHE) { try { await c.add(new Request(u, {cache: 'reload'})); } catch (_) {} }
+  }).then(() => self.skipWaiting()));
+});
+self.addEventListener('activate', (e) => {
+  e.waitUntil(caches.keys().then((ks) => Promise.all(ks.filter((k) => k !== VERSION).map((k) => caches.delete(k))))
+    .then(() => self.clients.claim()));
+});
+self.addEventListener('fetch', (e) => {
+  const req = e.request;
+  if (req.method !== 'GET' || new URL(req.url).origin !== location.origin) return;
+  const isHTML = req.mode === 'navigate' || (req.headers.get('accept') || '').includes('text/html');
+  if (isHTML) {
+    e.respondWith(fetch(req).then((r) => { const cp = r.clone(); caches.open(VERSION).then((c) => c.put(req, cp)); return r; })
+      .catch(() => caches.match(req).then((r) => r || caches.match('./index.html'))));
+  } else {
+    e.respondWith(caches.match(req).then((r) => r || fetch(req).then((res) => {
+      const cp = res.clone(); caches.open(VERSION).then((c) => c.put(req, cp)); return res; })));
+  }
+});

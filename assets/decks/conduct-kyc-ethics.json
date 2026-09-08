@@ -1,0 +1,180 @@
+{
+  "id": "conduct-kyc-ethics",
+  "lesson": "conduct-kyc-ethics",
+  "title": "从业行为红线",
+  "title_en": "Conduct, KYC, Ethics & Marketing",
+  "blueprint": "conduct",
+  "source": { "doc": "self", "lesson": "conduct-kyc-ethics", "chapter": "RDRE ch09-11", "anchor": "从业行为红线：KYC、适合性、道德守则与营销合规" },
+  "textbook_edition": "self-2026",
+  "est_minutes": 24,
+  "why": "这是 RDRE 考试题量最大的一簇——152 题里有 38 题落在第 9、10、11 三章，也是执业中唯一会让你丢掉注册资格的一簇。",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "从业行为红线",
+      "title_en": "Conduct, KYC, Ethics & Marketing",
+      "lede": "产品记错可以查招股书；KYC 没做、私下返佣、未经预批发广告，直接进纪律程序。<br>所有规则最终都落在一条可被检查的动作链上。",
+      "points": [
+        "KYC 是法定义务，客户无权豁免",
+        "利益冲突：披露→以客户最佳利益管理→无法管理则回避",
+        "投诉三个数字：5 个营业日初步回复、90 天实质回复、180 天 OBSI"
+      ]
+    },
+    {
+      "type": "map",
+      "title": "先建这张地图",
+      "hint": "四块内容：注册准入、KYC 与 KYP/Suitability、披露与利益冲突、营销合规。",
+      "groups": [
+        { "key": "①", "label": "注册准入", "en": "Registration", "ns": ["fit and proper", "CST 五条禁售"], "tone": "principle" },
+        { "key": "②", "label": "KYC / KYP / Suitability", "en": "Know Your Client", "ns": ["五维度", "四输入"], "tone": "number" },
+        { "key": "③", "label": "披露与冲突", "en": "Disclosure & Conflicts", "ns": ["60 天", "关系披露"], "tone": "warn" },
+        { "key": "④", "label": "禁令与营销", "en": "Bans & Marketing", "ns": ["佣金返还禁令", "DNCL/CASL"], "tone": "ok" }
+      ]
+    },
+
+    { "type": "section", "key": "①", "title": "注册与适任：整条注册生命线", "en": "Registration & Fit and Proper" },
+
+    { "type": "concept", "en": "Fit and Proper: Registration Basics", "cn": "注册与适任：proficiency、integrity、solvency",
+      "body": "提交注册申请（多数辖区 **Form 33-109F4**），须对每一问作出完整、准确的回答。监管与保荐经销商据此评估你是否具备三样东西——**proficiency（专业能力）、integrity（诚信）、solvency（偿付能力）**，这就是「fit and proper」。开口前必须：注册获批；**在每一个**你打算展业的辖区都完成注册。持续义务：申请表信息变化须**及时报告，通常 10 天内**。" },
+    { "type": "concept", "en": "CST's Five Sales Prohibitions", "cn": "CST 的五条禁售更硬，是产品考试明确考点",
+      "body": "① 只能在**注册所在省**销售，**不得**把住在别省的人邀请到你注册的省完成销售；② **跨省界或寄往加拿大境外的邮寄与通讯一律禁止**；③ 老客户**搬出**你注册的省后**不得继续向其销售**；④ **不得**替客户垫付购买单位的定金；⑤ **不得**保证计划未来的奖学金价值。",
+      "watch": "手册后面跟着一句全大写警告：违反上述任何一条可能导致注册被取消。" },
+    {
+      "type": "check",
+      "q": "客户老家住卑诗，你在安省注册，能不能邀请他来安省完成一次开户签约？",
+      "a": "不能。CST 的五条禁售明确规定不得把住在别省的人邀请到你注册的省完成销售，也不得跨省界通讯——这比一般证券法的居住地判据更硬。",
+      "why": "违反这些禁售规定，手册明写可能导致注册被取消。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "②", "title": "KYC：五个维度，一条不可豁免", "en": "Know Your Client" },
+
+    {
+      "type": "numbers",
+      "title": "KYC：五方面的充分信息",
+      "hint": "落到 Enrolment Application Form 上至少收集：全名地址电话、出生日期与 SIN、就业与家庭收入、投资知识与风险承受度、投资目标与期限。",
+      "rows": [
+        { "v": "a 个人情况", "k": "personal circumstances" },
+        { "v": "b 财务情况", "k": "financial circumstances" },
+        { "v": "c 投资知识", "k": "investment knowledge" },
+        { "v": "d 风险画像", "k": "risk profile（risk tolerance ＋ risk capacity）" },
+        { "v": "e 投资期限", "k": "time horizon" }
+      ]
+    },
+    { "type": "concept", "en": "KYC Procedures & Trusted Contact Person", "cn": "三条程序要求与可信联系人（TCP）",
+      "body": "客户须在收集后的合理时间内「确认」信息准确，流程须构成**有意义的互动**；须在整个投资期间保持时效，建议**至少每 3 年**复核；重要信息变更须**客户书面提供**（银行信息变更提交作废支票，法定改名须合法证明文件）。**TCP**用于在你怀疑客户遭财务剥削或心智能力下降时保护其利益，只能在特定情形下联系，须依客户在 KYC 文件中的**书面同意**。" },
+    { "type": "concept", "en": "KYC Cannot Be Waived", "cn": "KYC 不可被客户豁免",
+      "body": "你有法定义务，而法律并不赋予客户放弃这项义务的权利。面对不愿提供的客户说三句：①我有法定义务；②这是我正确建议你、确认你有供款资格的前提；③我与经销商在证券法、隐私法与内部政策下都须对你的信息保密。**仍拒绝的，你不能为他开户。**",
+      "watch": "账户从同事手上转到你名下时，必须适用与新客户完全相同的 KYC 标准。" },
+    {
+      "type": "check",
+      "q": "客户说「我不给 SIN 和收入，你按 $200 一个月开了吧」，能不能开？",
+      "a": "不能开。KYC 是法定义务且客户无权豁免；没有财务信息也无法证明可负担性。讲那三句话，仍拒绝则记录并停止开户。",
+      "why": "KYC 不可被客户豁免——你有法定义务，而法律并不赋予客户放弃这项义务的权利。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "③", "title": "KYP 与 Suitability：两个不同的义务", "en": "KYP & Suitability" },
+
+    { "type": "concept", "en": "Know Your Product", "cn": "KYP：未理解之前不得销售",
+      "body": "未采取**合理步骤**理解产品之前**不得**销售或推荐；且**只能推荐经销商已批准的产品**。经销商三动作：**评估**产品（含其初始与持续成本及成本影响）、**批准**其供代表销售、**持续监控与评估**其重大变化。" },
+    { "type": "concept", "en": "Suitability Assessment", "cn": "Suitability：四输入的判断",
+      "body": "你须在合理基础上判定，推荐给客户的每一项投资行动对他都合适。评估必须考虑四件事——**①客户 KYC ②经销商 KYP ③该投资成本对客户实际与潜在的影响 ④一个合理范围的投资选项**；奖学金计划另加**可负担性证据在档**。且必须在客户持有并持续供款的整个期间反复评估。",
+      "watch": "KYC 与 Suitability 是两个义务：KYC 是收集与记录事实，Suitability 是用事实做判断。" },
+    {
+      "type": "check",
+      "q": "「只推荐符合客户需求、目标与风险承受度的投资」这项义务叫什么，是不是 KYC？",
+      "a": "叫 Suitability Assessment，不是 KYC。KYC 是收集与记录事实，Suitability 是用事实做判断，评估须考虑客户 KYC、经销商 KYP、投资成本影响、合理范围的投资选项四件事。",
+      "why": "考题专门分辨 KYC 与 Suitability 这两个不同义务。",
+      "tier": 1
+    },
+
+    { "type": "section", "key": "④", "title": "告知客户：两层披露与利益冲突", "en": "Disclosure & Conflicts" },
+
+    { "type": "concept", "en": "Two Layers of Disclosure", "cn": "告知客户：两层披露",
+      "body": "**第一层，关于计划本身**：存款怎么交、何时可取款、费用与提前退出的后果、取得招股书的权利与**60 天内无成本退出的权利**。**两条禁令**：不得就单位未来价值或回报率作出任何承诺、保证或允诺；必须让客户明白证券监管与 CRA 的批准**不构成**背书、推荐或担保。**第二层，Relationship Disclosure**：关系之初交付，你的责任是花足够时间解释并能证明你解释过。" },
+    {
+      "type": "numbers",
+      "title": "奖学金计划经销商专属三件",
+      "rows": [
+        { "v": "Trade Confirmation", "k": "开户后尽快提供，含开户所付费用信息" },
+        { "v": "年度结单", "k": "须载明销售费信息与账户中尚未付清的余额，每年提醒一次" },
+        { "v": "Cost and Compensation Report ＋ Investment Performance Report", "k": "每年一份，后者披露 12 个月期初与期末市值" }
+      ]
+    },
+    { "type": "concept", "en": "Conflicts of Interest: Three Steps", "cn": "利益冲突三段式：披露、管理、回避",
+      "body": "**所有重大利益冲突必须向客户披露、以客户最佳利益管理；无法如此管理的必须回避。** 你的三个动作：①**识别并向经销商报告**；②以客户最佳利益评估并管理；③实施任何拟议做法**前先等经销商批准**。管理手段三分法：**AVOIDANCE**（法律禁止的与无法有效处理的）／**CONTROL**（隔离业务职能）／**DISCLOSURE**（让客户自行评估其重要性）。" },
+    {
+      "type": "check",
+      "q": "所有重大利益冲突必须怎么处理？",
+      "a": "必须向客户披露、以客户最佳利益管理；无法如此管理的必须回避——不是三选一，是按顺序判断，判不了管理才回避。",
+      "why": "你的三个动作是识别并报告、以客户最佳利益评估管理、实施前先等经销商批准。",
+      "tier": 1
+    },
+
+    { "type": "section", "key": "⑤", "title": "佣金返还禁令、记录保存与投诉", "en": "Bans, Records & Complaints" },
+
+    { "type": "concept", "en": "Four Prohibited Incentives", "cn": "佣金返还与诱因：四条禁令",
+      "body": "经销商不授权从业代表：①**协商降低销售费**；②**代客户支付部分或全部销售费或存款**；③**提出返还自己的部分佣金**；④**提供礼品或其他财务诱因以促成 enrolment**。边界：代表可向**推荐人**赠送**名义价值**的感谢礼品，或向推荐提供方支付**每个名字低于 $15** 的费用；推荐人未注册、不得提供任何投资建议。",
+      "watch": "「我把佣金分你一半」——这一句话就足以结束一段职业生涯。" },
+    {
+      "type": "numbers",
+      "title": "记录保存与投诉三个数字",
+      "rows": [
+        { "v": "经销商须保存（NI 31-103 s.11.5）", "k": "资本状况、审计轨迹、KYC/KYP/适合性遵守证明、含谈话笔记的通讯记录等七类" },
+        { "v": "你个人须保存", "k": "Enrolment Application Form、书面通讯、内部笔记、谈话笔记、招揽或推荐来源等五类" },
+        { "v": "投诉初步书面回复", "k": "5 个营业日内", "flag": true },
+        { "v": "投诉实质回复", "k": "90 天内" },
+        { "v": "客户不满意可提交 OBSI", "k": "180 天内（魁北克居民为 AMF）" }
+      ]
+    },
+    {
+      "type": "check",
+      "q": "客户口头投诉说交易做错了，需不需要正式记录处理，还是等他写正式投诉信再说？",
+      "a": "口头投诉应与书面投诉同等重视，都要记录、都要及时专业处理——5 个营业日内寄出书面初步回复，90 天内给出实质回复。",
+      "why": "NI 31-103 s.13.15 要求以「一位合理投资者会认为公平且有效」的方式回应每一宗投诉，口头与书面同等对待。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "⑥", "title": "营销与广告合规", "en": "Marketing & Advertising" },
+
+    { "type": "concept", "en": "Sales Communication, Advertisement & Exceptions", "cn": "三个定义，考点在边界",
+      "body": "**Sales communication** ＝ **任何**用以招揽或诱导购买奖学金计划的**口头或书面**沟通；**Advertisement** ＝ 经**公共媒体发布或为大规模分发而设计**的销售沟通；**不属于**销售沟通的三类：**招股书、账户结单、交易确认**。",
+      "watch": "「口头沟通也是 sales communication」是本章最被低估的红线——随口一句「我们历史上从来没亏过」与一则电视广告受同一套规则约束。" },
+    { "type": "concept", "en": "DNCL Calling Hours & CASL Consent", "cn": "DNCL 允许时段与 CASL 两种同意",
+      "body": "电话营销**只能在许可时段致电：周一至周五 9:00–21:30，周六与周日 10:00–18:00**；豁免对象包括过去 **18 个月**内有过业务往来的现有客户。**CASL**：向电子地址发送 CEM 须先取得**明示**（主动 opt-in）或**默示**（既有业务关系，**两年内**购买过产品或服务）同意。**罚则**：CRTC 可处**个人最高 $1,000,000**、**企业最高 $10,000,000**。" },
+    {
+      "type": "check",
+      "q": "老客户三年前买过一次，代表想给他群发邮件推新计划，需不需要额外取得同意？",
+      "a": "需要明示同意。默示同意只覆盖既有业务关系，且要求 CEM 发出前两年内购买过产品或服务——三年前的购买已经超出这个窗口。",
+      "why": "CASL 默示同意的「两年」与 DNCL 电话营销豁免的「18 个月」是两套不同的窗口，法源不同，不能互换。",
+      "tier": 2
+    },
+
+    {
+      "type": "recap",
+      "title": "这一篇要记住的",
+      "items": [
+        { "n": 1, "en": "Fit and Proper", "cn": "proficiency/integrity/solvency，须在每个展业辖区注册", "g": "①" },
+        { "n": 2, "en": "CST Five Bans", "cn": "只能在注册省销售，不得代垫、不得保证未来价值", "g": "①" },
+        { "n": 3, "en": "KYC Five Dimensions", "cn": "个人/财务/投资知识/风险画像/投资期限，不可豁免", "g": "②" },
+        { "n": 4, "en": "TCP Needs Written Consent", "cn": "可信联系人须客户书面同意方可联系", "g": "②" },
+        { "n": 5, "en": "KYC vs Suitability", "cn": "KYC 收集事实，Suitability 用事实做判断", "g": "③" },
+        { "n": 6, "en": "Two Disclosure Layers", "cn": "计划本身两条禁令＋关系披露，SPD 专属三件年年提醒", "g": "④" },
+        { "n": 7, "en": "Conflict Three Steps", "cn": "披露→客户最佳利益管理→无法管理则回避", "g": "④" },
+        { "n": 8, "en": "Four Rebate Bans", "cn": "不得议价/代垫/返佣/送礼促成，推荐人名义礼品是例外", "g": "⑤" },
+        { "n": 9, "en": "Complaint Three Numbers", "cn": "5 个营业日初步回复，90 天实质回复，180 天 OBSI", "g": "⑤" }
+      ]
+    },
+    {
+      "type": "outro",
+      "title": "学完地图，去练题",
+      "lede": "这是 RDRE 考试题量最大的一簇（152 题里 38 题落在第 9、10、11 三章），也是执业中唯一会让你丢掉注册资格的一簇。",
+      "actions": [
+        { "label": "去做本板块练习", "href": "drill.html?bp=conduct", "primary": true },
+        { "label": "下一组：监管地图", "href": "slides.html?deck=regulatory-map" }
+      ],
+      "honest": "这一讲不展开 RESPDAC 道德守则四项原则的逐条文字与营销六条标准的全部细则——那些留给正文详读。"
+    }
+  ]
+}

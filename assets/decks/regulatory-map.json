@@ -1,0 +1,193 @@
+{
+  "id": "regulatory-map",
+  "lesson": "regulatory-map",
+  "title": "监管地图",
+  "title_en": "The Regulatory Map",
+  "blueprint": "regulation",
+  "source": { "doc": "self", "lesson": "regulatory-map", "chapter": "RDRE ch12-13", "anchor": "监管地图：13 家省证监会、NI 31-103，以及 SPD 站在哪一格" },
+  "textbook_edition": "self-2026",
+  "est_minutes": 24,
+  "why": "这是 RDRE 卷面上第二大的一簇（约占 17%），也是最容易被中文读者读拧的一簇——加拿大没有一个证监会，有十三个。",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "监管地图",
+      "title_en": "The Regulatory Map",
+      "lede": "加拿大证券监管长得和中国、美国都不一样：没有一个「证监会」，有十三个；<br>没有一部《证券法》，有十三部；把它们粘在一起的那个东西（CSA）根本不是政府机关。",
+      "points": [
+        "13 家省/地区证监会直接注册你、直接管你、直接罚你",
+        "奖学金计划经销商（SPD）不入 CIRO，仍由所属省证监会直管",
+        "奖学金计划的撤回权从一般证券的 2 天延长到 60 天（NP15）"
+      ]
+    },
+    {
+      "type": "map",
+      "title": "先建这张地图",
+      "hint": "四块内容：省辖制与 NI、注册柱、招股书柱、联邦层与执法。",
+      "groups": [
+        { "key": "①", "label": "省辖制", "en": "Provincial Regime", "ns": ["13 家证监会", "CSA 非机关"], "tone": "principle" },
+        { "key": "②", "label": "注册柱", "en": "Registration Pillar", "ns": ["s.3.7", "客户住哪你就在哪注册"], "tone": "number" },
+        { "key": "③", "label": "招股书柱", "en": "Prospectus Pillar", "ns": ["receipt", "60 天撤回"], "tone": "warn" },
+        { "key": "④", "label": "联邦层与执法", "en": "Federal Layer", "ns": ["FINTRAC", "刑法"], "tone": "ok" }
+      ]
+    },
+
+    { "type": "section", "key": "①", "title": "为什么加拿大没有联邦证监会", "en": "No Federal Regulator" },
+
+    { "type": "concept", "en": "No Federal Securities Regulator", "cn": "为什么加拿大没有联邦证监会",
+      "body": "**证券监管属省级管辖权**，所以加拿大有 **13 个**省/地区监管机构，**没有联邦证监会，也没有联邦证券法**。这是宪法把「财产与民事权利」划给省的直接后果。**CSA（加拿大证券管理局）**是**一个非正式的全国性协会**，不是政府机关，**不能直接注册你，也不能直接罚你**——罚你的永远是某一家省证监会。三个地区（育空、西北地区、努纳武特）同样有证券监管机构。",
+      "hook": "即便真的重组成单一监管机构，你作为 dealing representative 的基本法律义务和对客户的责任，预期基本不变。" },
+    { "type": "concept", "en": "National Instrument: One Language, 13 Provinces", "cn": "National Instrument：省辖制下的统一术",
+      "body": "CSA 组织起草 → 每一家省/地区监管机构各自在本辖区把它采纳为本地规则 → 全国口径一致。**National Instrument（NI）**——全部辖区，全国统一采纳的规则；**Multilateral Instrument（MI）**——若干但非全部辖区；**National Policy（NP）**——是解释与预期，说明监管机构怎么理解法律。教材说 NI **有三十多份（more than three dozen）**。",
+      "watch": "National Policy 15 是个例外形态——它虽名为 Policy，却是奖学金计划拿到招股书收据的前置门槛，实际约束力很硬。" },
+    {
+      "type": "check",
+      "q": "客户问「加拿大的证监会叫什么名字」？",
+      "a": "没有单一的联邦证监会——加拿大有 13 个省/地区证监会（如 OSC、BCSC），CSA 只是一个非正式的全国性协会，不能直接注册人或罚人，罚你的永远是省证监会。",
+      "why": "这是宪法把证券监管划给省的直接后果，不是「还没来得及统一」。",
+      "tier": 1
+    },
+
+    { "type": "section", "key": "②", "title": "注册柱：NI 31-103 s.3.7 与你的注册生命线", "en": "Registration Pillar" },
+
+    {
+      "type": "numbers",
+      "title": "NI 31-103 s.3.7：你的准入考试写在这一行",
+      "rows": [
+        { "v": "一次性", "k": "通过即满足注册前提，条文未规定周期性重考" },
+        { "v": "祖父豁免", "k": "自 2009-09-28 起连续注册为 SPD dealing representative 的人不适用该考试要求", "flag": true },
+        { "v": "不是唯一一场", "k": "还要完成 dealer 自己的产品知识培训（CST 那场产品考试）" }
+      ]
+    },
+    { "type": "concept", "en": "Register Where Your Client Lives", "cn": "注册在哪里：客户住哪，你就得在哪注册",
+      "body": "教材的规则是：**在你开展业务的每一个省或地区都必须注册**——你的客户住在哪个省，你就必须在那个省注册。法规确实规定了若干注册豁免，但教材明说：**这些豁免非常有限，一般不适用于 SPD 的 dealing representative**。**居住要求**：一般需要**在加拿大居住满一年**才会被批准销售奖学金计划。",
+      "watch": "「我在安省注册了，可以卖给 BC 的客户吗」——不可以。判据是客户的居住地，不是你的办公地。" },
+    { "type": "concept", "en": "10-Day and 30-Day Clocks", "cn": "注册之后：10 天与 30 天两条时钟",
+      "body": "依 NI 33-109，**10 天内**（走 NRD，用 F5）报备的事项：姓名／住址变更、换 dealer、任何辖区注册被暂停/撤销、受到监管处分、触犯法律、破产、新增或变更的外部业务或受雇活动。**30 天内**：少数特定事项，如**国籍变更、过往受雇经历**。你离开 dealer，dealer 必须**10 天内**提交 F1 终止通知。" },
+    {
+      "type": "check",
+      "q": "一位在安省注册的从业代表想帮卑诗的亲戚开个计划，「只是帮忙不收佣金」能不能改变这个判断？",
+      "a": "不能改变。判据是客户居住地，客户在 BC 你就必须在 BC 注册——证券法里的 trading 包含任何促成交易的行为、招揽与磋商，「只是帮忙」不改变这个判断。",
+      "why": "这是无牌交易的经典入口，正确动作是申请 BC 注册，或转介给有 BC 牌照的同事。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "③", "title": "SPD 不入 CIRO：这一格必须单独讲", "en": "SPD Is Not Under CIRO" },
+
+    { "type": "concept", "en": "SPD Is Not Under CIRO", "cn": "CIRO 是什么，SPD 为什么不在里面",
+      "body": "**CIRO**于 **2023-01-01** 由 **IIROC**（管投资交易商）与 **MFDA**（管共同基金交易商）合并而成。委托给 CIRO 的注册职能只覆盖投资交易商与共同基金交易商，而 **scholarship plan dealers——公司与个人——仍然向所属地方证监会注册并受其监管**。",
+      "watch": "很多中文资料把「加拿大证券从业者都归 CIRO 管」当成常识写——奖学金计划经销商不在其中。" },
+    {
+      "type": "numbers",
+      "title": "活例：CST 集团内部的两条路",
+      "hint": "同一栋楼里的两家公司，一家在 CIRO 里，一家不在——决定归属的不是公司名字，是注册类别。",
+      "rows": [
+        { "v": "C.S.T. Savings Inc.", "k": "卖奖学金计划，注册类别 Scholarship Plan Dealer，省证监会直管" },
+        { "v": "C.S.T. Spark Inc.", "k": "卖共同基金形态 RESP，SPD＋Mutual Fund Dealer 双注册，是 CIRO 的 Dealer Member", "flag": true }
+      ]
+    },
+    {
+      "type": "check",
+      "q": "同事说「CST 现在归 CIRO 管了吧，反正都合并了」，这句话对吗？",
+      "a": "不对。CST Savings Inc.（卖奖学金计划）仍由省证监会直管，不入 CIRO；只有 CST Spark Inc.（卖共同基金形态 RESP）因持有共同基金交易商注册，才是 CIRO 的 Dealer Member。",
+      "why": "决定归属的不是公司名字或母体关系，是注册类别——CSA 委托给 CIRO 的职能明确不含 scholarship plan dealers。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "④", "title": "招股书柱：从 full/true/plain 到 60 天撤回权", "en": "Prospectus Pillar" },
+
+    { "type": "concept", "en": "Full, True and Plain Disclosure", "cn": "招股书法律要求与 receipt 不是批准",
+      "body": "法律对招股书的要求是**对所发行证券相关的全部重大事实，作出完整、真实、清楚的披露（full, true and plain disclosure of all material facts）**。「证券监管机构对招股书出具收据，就等于认可它是审慎的投资」——**False**。出具收据只意味着披露文件在形式与内容上达到了法定要求，**监管机构从不为投资价值背书**。",
+      "watch": "客户听到「政府批准的」四个字会自动理解成「政府担保」，那是误导性陈述，同时踩 Competition Act s.52。" },
+    {
+      "type": "numbers",
+      "title": "交付与撤回：两个日历，别记混",
+      "rows": [
+        { "v": "一般证券撤回权", "k": "收到最新招股书后 2 个营业日内书面通知即可无成本撤回" },
+        { "v": "奖学金计划撤回权", "k": "National Policy 15 把它从 2 天延长到 60 天", "flag": true },
+        { "v": "一般证券交付期限", "k": "最迟不晚于签订购买协议后第二个营业日的午夜" }
+      ]
+    },
+    { "type": "concept", "en": "National Policy 15", "cn": "NP15：奖学金计划专属的那一层",
+      "body": "**NP15** 由 CSA 制定，规定了大多数奖学金计划在监管机构为其招股书出具收据之前必须遵守的标准，覆盖披露要求、注册要求、投资限制、**费用上限**、**延长的撤回权**、适当性问题。两条限定：它**很多年没有更新了**，某些部分已被其他政策补充或取代；**例外并不罕见**，每个计划的具体条款以它自己的招股书为准。" },
+    {
+      "type": "check",
+      "q": "客户上周签了约，你手上的招股书是去年那一版，会有什么后果？",
+      "a": "两个后果：①交付义务未履行——客户的撤回权持续挂着不灭；②若旧版已过 lapse date，依据它出售证券本身就不合法。正确动作是立即以现行版本重新交付并记录交付日期。",
+      "why": "撤回权的时钟是从购买人收到招股书那天起算的，不是从签约起算——没有及时交付，撤销权就一直挂着不灭。",
+      "tier": 3
+    },
+
+    { "type": "section", "key": "⑤", "title": "联邦层：反洗钱与隐私", "en": "Federal Layer: AML & Privacy" },
+
+    {
+      "type": "numbers",
+      "title": "反洗钱：三阶段与两套阈值",
+      "rows": [
+        { "v": "① 放置 Placement", "k": "犯罪所得进入金融体系" },
+        { "v": "② 分层 Layering", "k": "转换形态、制造复杂交易层" },
+        { "v": "③ 整合 Integration", "k": "已洗白的资金以合法外观被取出" },
+        { "v": "STR 可疑交易报告", "k": "现行：建立合理怀疑依据所需措施完成后 as soon as practicable 提交，无金额门槛；通常电子报送，无技术能力可纸本（RKU-0015）", "flag": true },
+        { "v": "LCTR 大额交易报告", "k": "$10,000 或以上现金（含24小时合并规则），交易后15个日历日内报 FINTRAC" }
+      ]
+    },
+    { "type": "concept", "en": "STR: Textbook and Current Law", "cn": "STR 的版本分流", "body": "教材 ©2024-02 ch12 写30天内；仅明确指定旧教材的历史题保留该口径。现行法 SOR/2001-317 s.9(2) 要求完成建立合理怀疑依据所需措施后 as soon as practicable 提交，不能等固定天数。跨境现金申报走 CBSA，不是 dealer 的 LCTR。" },
+    { "type": "concept", "en": "Identity Verification: Two Layers", "cn": "身份核实这一格有一个双层结构，最容易被答反",
+      "body": "反洗钱立法**豁免**了 dealer 对**注册计划账户（含 RESP）**授权指令人的身份核实义务；**但是**——**证券法（NI 31-103 s.13.2）要求每一个注册人采取合理步骤确认每一位客户的身份**。所以正确答案永远是「要核实」，但理由不是反洗钱法，是证券法。" },
+    {
+      "type": "check",
+      "q": "RESP 账户在反洗钱法下豁免身份核实，那你还要不要核实客户身份？",
+      "a": "要。依据不是反洗钱法（那里确实豁免了注册计划账户），而是证券法 NI 31-103 s.13.2——要求每个注册人采取合理步骤确认每位客户身份。",
+      "why": "只记住「反洗钱法豁免 RESP」会答错，只记住「要核实」而说错依据也不算答对。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "⑥", "title": "执法柱：以及 2026 现行 vs 教材的四处错位", "en": "Enforcement & 2026 Gaps" },
+
+    {
+      "type": "numbers",
+      "title": "执法柱：机构手上有什么工具",
+      "rows": [
+        { "v": "行政处分", "k": "暂停或撤销注册、停止交易令、禁任令、部分辖区罚款可达 100 万加元或以上" },
+        { "v": "刑法 s.380(1) 欺诈", "k": "价值超过 $5,000 的最高 14 年监禁" },
+        { "v": "刑法 s.400(1) 虚假招股书", "k": "最高 10 年" }
+      ]
+    },
+    { "type": "concept", "en": "2026 Current vs Textbook: Four Gaps", "cn": "2026 现行 vs 教材：这一簇的四处错位",
+      "body": "① **TCR 总成本披露**——CSA/CCIR/CISRO/CIRO 联合规则，**2026-01-01 生效**，把 scholarship plans 纳入，**2027 年初**首次出年度报告（置信中）；② **NI 31-103 拟议修订**——CST Savings 于 **2025-09-24** 就禁止 chargeback 向 OSC 提交意见函，尚未落地；③ **行业格局**——RESPDAC 现任会员**只有 4 家**，仍售集团计划的只有 CST 与 CEFI；④ **CIRO 前瞻**——若教材含「SPD 将并入 SRO」的表述，截至 2026-08 未兑现。",
+      "watch": "总纪律：教材答考试，2026 现行答客户，考场上按教材答没有例外。" },
+    {
+      "type": "check",
+      "q": "教材若含「SPD 未来将并入 CIRO」的前瞻表述，2026 年这句话兑现了吗？",
+      "a": "没有。截至 2026-08，CSA 官方页面明确把 SPD 排除在委托给 CIRO 的注册职能范围之外，且未查到任何把 SPD 纳入 CIRO 的正式提案。考试仍按教材答，对客户与同行讲按 2026 现实讲。",
+      "why": "教材成文于 2024-02，监管的时间线没有停——判断某条规则属于哪条时间线，看它的日期在不在 2024-02 之后。",
+      "tier": 2
+    },
+
+    {
+      "type": "recap",
+      "title": "这一篇要记住的",
+      "items": [
+        { "n": 1, "en": "13 Regulators, No Federal", "cn": "13 家省证监会，没有联邦证监会，CSA 非机关无执法权", "g": "①" },
+        { "n": 2, "en": "NI vs MI vs NP", "cn": "NI 全辖区统一规则，MI 部分辖区，NP 是解释与预期", "g": "①" },
+        { "n": 3, "en": "s.3.7 One-time Exam", "cn": "一次性通过，2009-09-28 起连续注册者祖父豁免", "g": "②" },
+        { "n": 4, "en": "Register Where Client Lives", "cn": "判据是客户居住地不是你的办公地", "g": "②" },
+        { "n": 5, "en": "SPD Not Under CIRO", "cn": "CIRO 只管投资交易商与共同基金交易商，SPD 省证监会直管", "g": "③" },
+        { "n": 6, "en": "Receipt ≠ Approval", "cn": "receipt 只表示达到披露形式要求，不为投资价值背书", "g": "④" },
+        { "n": 7, "en": "NP15: 60-Day Right", "cn": "奖学金计划撤回权从一般证券 2 天延长到 60 天", "g": "④" },
+        { "n": 8, "en": "AML Three Stages", "cn": "放置/分层/整合；STR 建立合理怀疑依据后尽快报；LCTR 现金阈值 $10,000", "g": "⑤" },
+        { "n": 9, "en": "2026 Four Gaps", "cn": "TCR／chargeback 修订／行业格局／CIRO 前瞻，教材答考试 2026 答客户", "g": "⑥" }
+      ]
+    },
+    {
+      "type": "outro",
+      "title": "学完地图，去练题",
+      "lede": "这是 RDRE 卷面上第二大的一簇，占约 17%，也是最容易被中文读者读拧的一簇——加拿大没有一个证监会，有十三个。",
+      "actions": [
+        { "label": "去做本板块练习", "href": "drill.html?bp=regulation", "primary": true },
+        { "label": "下一组：经济与市场基础", "href": "slides.html?deck=economy-markets-primer" }
+      ],
+      "honest": "这一讲不展开表格族（33-109F1–F7）与刑法各条文的完整刑期细节——正文有完整对照表。"
+    }
+  ]
+}

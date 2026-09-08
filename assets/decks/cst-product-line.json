@@ -1,0 +1,187 @@
+{
+  "id": "cst-product-line",
+  "lesson": "cst-product-line",
+  "title": "CST 产品线 2026",
+  "title_en": "CST Product Line 2026",
+  "blueprint": "cst-product",
+  "source": { "doc": "self", "lesson": "cst-product-line", "chapter": "CST 手册 ch01/ch05", "anchor": "CST 产品线 2026：一个基金会、四家公司、三个在售计划" },
+  "textbook_edition": "self-2026",
+  "est_minutes": 22,
+  "why": "CST 产品知识考试考的是一家具体公司，而这家公司在 2020 年手册出版之后改了名、卖掉了一个计划、并进了姊妹公司、涨了费、换了总裁。",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "CST 产品线 2026",
+      "title_en": "CST Product Line 2026",
+      "lede": "一个基金会、四家公司、三个在售计划。<br>手册前言自己写了这条规矩：**如有冲突，以现行 CST Plan Prospectus 为准**。",
+      "points": [
+        "基金会非营利签约方，CSTS 营利分销商，两者角色分离",
+        "三个在售计划：Advantage（集团）、Individual、Family（自主型）",
+        "2027-01-01 起魁北克停售 Advantage 新单位，其余省份照常"
+      ]
+    },
+    {
+      "type": "map",
+      "title": "先建这张地图",
+      "hint": "四块内容：组织架构、核心机制、组织事实变化、2026 现行实务。",
+      "groups": [
+        { "key": "①", "label": "组织架构", "en": "Org Structure", "ns": ["基金会", "CSTS", "Spark"], "tone": "principle" },
+        { "key": "②", "label": "核心机制", "en": "Core Mechanics", "ns": ["Unit", "Beneficiary Group", "Attrition"], "tone": "number" },
+        { "key": "③", "label": "组织事实变化", "en": "What Changed", "ns": ["CSTC→CSTS", "新总裁"], "tone": "warn" },
+        { "key": "④", "label": "2026 现行实务", "en": "2026 Realities", "ns": ["魁北克停售", "Bright→Spark", "诉讼"], "tone": "ok" }
+      ]
+    },
+
+    { "type": "section", "key": "①", "title": "为什么要拆成一个基金会加三家公司", "en": "Foundation + Companies" },
+
+    { "type": "concept", "en": "Non-profit Foundation, For-profit Distributor", "cn": "非营利基金会 + 营利子公司：责任与激励的分离",
+      "body": "**基金会**是非营利机构，由独立董事会治理，是与认购人签订 Education Savings Plan Agreement 的一方，拿的是账户管理费与综合管理费。**CSTS 是营利公司**，100% 由基金会持有，负责计划的日常管理、行政、记录、EAP 计算，同时是唯一分销商。招股书明确说明：CSTS 作为分销商所得的报酬，**直接来自认购人支付的销售费**，**不是**从向计划收取的管理费中支付。",
+      "hook": "你交的管理费不会变成销售代表的佣金——佣金全部来自那笔 $200／单位的销售费。" },
+    { "type": "concept", "en": "Why a Second Dealer: Spark", "cn": "为什么要有第二家经销商：因为它卖的是另一类证券",
+      "body": "**C.S.T. Savings Inc.**注册类别是 **Scholarship Plan Dealer**，不入 CIRO，由各省证监会直管；**C.S.T. Spark Inc.**是 SPD **＋ Mutual Fund Dealer** 双注册，是 **CIRO Dealer Member** 且为 **CIPF** 会员，卖 CST Spark RESP（投资 CST Spark Education Portfolios）。CSA 的注册职能委托**明确只覆盖投资交易商与共同基金交易商**——SPD 公司与个人仍向所属省证监会注册并受其监管。",
+      "watch": "任何说「奖学金计划经销商归 CIRO 管」的说法，截至 2026-08 都是错的。" },
+    {
+      "type": "check",
+      "q": "客户问「你们的佣金是从我交的管理费里出的吗」？",
+      "a": "不是。招股书明确说明 CSTS 作为分销商所得的报酬直接来自认购人支付的销售费，不是从向计划收取的管理费中支付——管理费不会变成销售代表的佣金。",
+      "why": "这条对客户很有用：交的管理费与销售代表的佣金是两笔完全不同的钱。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "②", "title": "集团计划的核心机制：单位、受益人组、attrition", "en": "Core Mechanics" },
+
+    { "type": "concept", "en": "Unit, Beneficiary Group, Attrition", "cn": "三个词是理解 Advantage Plan 的全部",
+      "body": "**Unit（单位）**——认购人在其受益人组 EAP 账户中的份额，定价目标是同一受益人组内每个单位到期时产生相同收益。**Beneficiary Group（受益人组）**——预期在同一年开始接受高等教育的受益人集合。**Attrition（脱落）**——有人中途走了，他被没收的收益转入该受益人组的 EAP 账户，由留下来的受益人分享。单位数由供款金额、供款频率、入组时受益人的年龄共同决定。" },
+    {
+      "type": "numbers",
+      "title": "手册例题：会算就够",
+      "rows": [
+        { "v": "3 岁孩子，按月供 $125，3M 档单位价 $13.95", "k": "$125 ÷ $13.95 ＝ 8.961 单位" },
+        { "v": "供款 168 个月（14 年 × 12）× $125", "k": "$21,000", "flag": true }
+      ]
+    },
+    { "type": "concept", "en": "Pre- vs Post-maturity Attrition", "cn": "两类 attrition 必须分清",
+      "body": "**Pre-maturity attrition（到期前脱落）**——触发是认购人取消计划或转到其他提供商，被没收的收益进入该组 EAP 账户。**Post-maturity attrition（到期后脱落）**——触发是受益人不读书、不入读合资格课程或未在受益期内入读，到期后受益人必须领满全部 EAP，否则收益作废。招股书自己披露了这个概率：**最近五个到期的受益人组，平均 17% 的计划在到期前被取消。**" },
+    {
+      "type": "check",
+      "q": "3 岁孩子按月供 $125，单位价 $13.95，供款 14 年（168 个月），能买多少单位？总共供多少钱？",
+      "a": "8.961 单位（$125 ÷ $13.95）；总供款 168 × $125 = $21,000。",
+      "why": "这个例题的形态（供款额÷单位价→单位数，月数×供款额→总供款）是 CST 产品考试的常见套路。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "③", "title": "组织事实：哪些没变，哪些变了", "en": "What Changed Since 2020" },
+
+    {
+      "type": "numbers",
+      "title": "组织事实：哪些没变，哪些变了",
+      "rows": [
+        { "v": "基金会成立年", "k": "1960（两边都答 1960）" },
+        { "v": "分销／管理子公司", "k": "2020 手册 C.S.T. Consultants Inc.（CSTC）→ 2026 招股书 C.S.T. Savings Inc.（CSTS），同一法人已改名" },
+        { "v": "受托人兼保管人", "k": "RBC Investor Services Trust，自 1996-03-01 起未变", "flag": true },
+        { "v": "总裁／CEO", "k": "Peter A. Lewis，自 2024 年 4 月起同任基金会/CSTS/Spark/CSTAM 总裁" },
+        { "v": "首席投资官", "k": "Ela Karahasanoglu，自 2025 年 6 月起同任 CIO" }
+      ]
+    },
+    { "type": "concept", "en": "Don't 'Correct' the Textbook on the Exam", "cn": "改名这件事，考场上千万别「纠正」教材",
+      "body": "Learnedly 的 CST 题库与 2020 手册同源，题干与选项里出现的很可能仍是 **C.S.T. Consultants Inc./CSTC**。**考试按手册答；对客户、对同业、写任何对外文字，一律用 C.S.T. Savings Inc./CSTS。** 支票抬头也是同理——手册说初次存款支票抬头写给 C.S.T. Consultants Inc.，**现实中必须按现行文件核对抬头，别照手册开支票**。" },
+    {
+      "type": "check",
+      "q": "考试题干里出现「C.S.T. Consultants Inc.」，这个名字是不是过期错误，该不该在考场上纠正？",
+      "a": "不该纠正。Learnedly 的 CST 题库与 2020 手册同源，考试按手册答（CSTC）；只有对客户、同业或对外文字，才一律用现行的 C.S.T. Savings Inc.（CSTS）。",
+      "why": "同一法人已改名，但这是「教材口径 vs 现行口径」的问题，不是教材写错了。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "④", "title": "三个在售计划与最低认购", "en": "Three Plans, 2027 Quebec Stop" },
+
+    {
+      "type": "numbers",
+      "title": "三个在售计划与最低认购（2026 招股书封面口径）",
+      "rows": [
+        { "v": "CST Advantage Plan", "k": "最低每月 $9.50 与 1/10 单位取较大者，销售费 $200／单位", "flag": true },
+        { "v": "Individual Savings Plan", "k": "最低认购 $150，销售费 $50／计划，自首笔供款扣清" },
+        { "v": "Family Savings Plan", "k": "最低认购 $150，受益人须为子女/孙/曾孙且均未满 21 岁" }
+      ]
+    },
+    { "type": "concept", "en": "Quebec Stops Advantage Plan Sales in 2027", "cn": "魁北克 2027-01-01 停售 Advantage Plan（教材完全没有的新规）",
+      "body": "招股书明写：The Foundation and C.S.T. Savings Inc. will no longer offer units of the CST Advantage Plan for sale in Quebec effective **January 1, 2027**。拆成实务语言：**2026-12-31 之前**魁北克仍可正常购买；**2027-01-01 起**不再发售新单位，也不能再向现有计划追加单位；**存量计划照旧**，供款继续收取并按原协议管理。",
+      "watch": "这不是「Advantage Plan 全国停售」——招股书同时明确列出三个在售计划，Advantage 在其余省份照常销售。" },
+    {
+      "type": "check",
+      "q": "魁北克客户 2026 年 11 月来问 Advantage Plan，现在还能卖吗？",
+      "a": "现在还能卖——2026-12-31 之前魁省仍在售。但必须主动告诉他 2027-01-01 起魁省停售新单位，届时也不能再向这份计划追加单位，已购部分继续按原协议管理。",
+      "why": "不讲这一条就成交，等于在明知重大限制的情况下未作披露。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "⑤", "title": "CST Bright Plan → CST Spark", "en": "Bright Plan Merged Into Spark" },
+
+    {
+      "type": "numbers",
+      "title": "CST Bright Plan → CST Spark",
+      "rows": [
+        { "v": "2021-12-09", "k": "Bright Plan 特别持有人会议 89% 赞成，并入 CST Spark RESP", "flag": true },
+        { "v": "现行 Spark 产品费用", "k": "CST Spark Education Portfolios 年管理费 1.3%，另加标的基金费用最高 0.2%" }
+      ]
+    },
+    { "type": "concept", "en": "Discontinued but Still Active Plans", "cn": "已停售但仍有存量的计划",
+      "body": "**Group Savings Plan (P4)**——至 2001 年停售，销售费**全额退还**（不是 50%），随第一笔 EAP 一次退清。**Founders' Plan (P3)**——1988-09 至 2000-08 在售，**没有销售费退还**。「Group Savings Plan」在手册里有两个意思，考试专门坑这个：**Group Savings Plan (P4)** 是 2001 年停售的老计划；**Group Savings Plan 2001** 是 **2020-01-20** 更名为 CST Advantage Plan 的那个——就是现在在售的集团计划。" },
+    {
+      "type": "check",
+      "q": "网上写「Bright Plan 管理费 1.5%」，客户问能不能买这个 1.5% 的计划？",
+      "a": "不能。Bright Plan 已于 2021-12 并入 CST Spark，不是在售产品；现行是 CST Spark RESP，管理费 1.3% + 标的基金最高 0.2%，那个 1.5% 的页面是官网未下线的旧文案。",
+      "why": "网站不同步是常态，别拿官网的静态页当现行事实用。",
+      "tier": 2
+    },
+
+    { "type": "section", "key": "⑥", "title": "转换规则与魁北克集体诉讼", "en": "Transfer Rules & Litigation" },
+
+    { "type": "concept", "en": "Transfer Rules: Advantage to Individual/Family", "cn": "转出规则：时限、转什么、代价",
+      "body": "**时限**：随时可转，直至受益人年满 20 岁的那个日历年年末；该选项在受益人年满 21 岁那年的 1 月 1 日失效。**转什么**：100% 的累积净供款、政府补助、以及这两者所产生的全部收益，全额转入。**手续费**：无。**代价**：转出后不再持有任何单位，作为 Advantage Plan 认购人的全部权利终止——包括不再有资格分享 attrition。",
+      "hook": "「全额转、免手续费」这半句是真的，「不损失任何东西」是假的——转出瞬间失去的是 attrition 分享权，这是 Advantage Plan 唯一的超额收益来源。" },
+    {
+      "type": "numbers",
+      "title": "魁北克集体诉讼：陈述事实，不预测结果",
+      "rows": [
+        { "v": "2018-06-15", "k": "魁北克 Superior Court 受理针对全部注册奖学金计划经销商的诉讼" },
+        { "v": "2021-03-31", "k": "获准作为集体诉讼推进" },
+        { "v": "2025-07-14", "k": "同案三方（CEF/Knowledge First/Heritage）签署和解，拟赔付 $634,072", "flag": true },
+        { "v": "截至 2026-08-20", "k": "CST 未和解，仍在按实体审理" }
+      ]
+    },
+    {
+      "type": "check",
+      "q": "客户问「CST 那个魁北克的集体诉讼怎么样了，你们输了吗」？",
+      "a": "陈述事实不预测结果：有一宗关于魁省销售费的集体诉讼在审，CST 是被告之一，尚未结案，招股书里有完整披露；同案其他三方已于 2025-07-14 和解，但 CST 没有和解，仍在按实体审理。",
+      "why": "不能说「已经和解了」（CST 没有）、「我们赢定了」（招股书自己说无法预测）、或「跟我们无关」（CSTS 与基金会都被列名）。",
+      "tier": 2
+    },
+
+    {
+      "type": "recap",
+      "title": "这一篇要记住的",
+      "items": [
+        { "n": 1, "en": "Foundation vs CSTS", "cn": "基金会非营利签约方，CSTS 营利分销商，佣金来自销售费", "g": "①" },
+        { "n": 2, "en": "Spark ≠ Savings", "cn": "Savings 是 SPD 不入 CIRO，Spark 是 SPD+MFD 双注册入 CIRO", "g": "①" },
+        { "n": 3, "en": "Unit/Group/Attrition", "cn": "三个词理解 Advantage Plan 的全部机制", "g": "②" },
+        { "n": 4, "en": "Two Attrition Types", "cn": "到期前脱落进该组 EAP 账户，到期后脱落须领满全部 EAP", "g": "②" },
+        { "n": 5, "en": "CSTC → CSTS", "cn": "同一法人已改名，考试按手册 CSTC 答，对外一律用 CSTS", "g": "③" },
+        { "n": 6, "en": "Three Plans, Min Investment", "cn": "Advantage $9.50/月或 1/10 单位，Individual/Family $150", "g": "④" },
+        { "n": 7, "en": "Quebec 2027", "cn": "2027-01-01 起魁北克停售 Advantage 新单位，其余省份照常", "g": "④" },
+        { "n": 8, "en": "Bright → Spark", "cn": "2021-12-09 投票 89% 并入 Spark，现行管理费 1.3%+0.2%", "g": "⑤" },
+        { "n": 9, "en": "Transfer Loses Attrition", "cn": "转出全额免手续费，但失去 attrition 分享权", "g": "⑥" }
+      ]
+    },
+    {
+      "type": "outro",
+      "title": "学完地图，去练题",
+      "lede": "这一篇讲一家具体公司：CST 产品知识考试考的正是它，且这本 2020 年手册出版后组织架构已经变了不少。",
+      "actions": [
+        { "label": "去做本板块练习", "href": "drill.html?bp=cst-product", "primary": true },
+        { "label": "下一组：从业行为红线", "href": "slides.html?deck=conduct-kyc-ethics" }
+      ],
+      "honest": "这一讲不展开投资授权与组合管理的细节——那部分与经济市场章节相关，另有安排。"
+    }
+  ]
+}
