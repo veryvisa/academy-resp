@@ -107,10 +107,16 @@
     if (birthYear < V("bctesg_birth_from")) return { ok: false, why: "2006 年以前出生的孩子不适用" };
     const w = V("bctesg_window");
     const open = new Date(birthYear + w.from_age, (birthMonth || 1) - 1, 1);
-    const close = new Date(birthYear + w.to_age_exclusive, (birthMonth || 1) - 1, 1);
-    if (today < open) return { ok: true, state: "未到", open, close, why: "窗口还没开：6 岁生日起可申请" };
-    if (today >= close) return { ok: false, state: "已过", open, close, why: "9 岁生日前一天已过，窗口关闭" };
-    return { ok: true, state: "进行中", open, close, why: "正在窗口里：开 RESP 并请机构代申请" };
+    let close = new Date(birthYear + w.to_age_exclusive, (birthMonth || 1) - 1, 1);
+    const endStr = V("bctesg_end");               // BC 2026 年预算：终止日（已宣布，过渡安排未详）
+    const end = new Date(endStr + "T00:00:00");
+    const tail = `（BC 已宣布 ${endStr} 起终止 BCTESG，过渡安排官方未详）`;
+    if (open >= end) return { ok: false, state: "赶不上", open, close: end, why: "6 岁生日在终止日之后，按现有公告拿不到" + tail };
+    const cut = close > end;
+    if (cut) close = end;
+    if (today < open) return { ok: true, state: "未到", open, close, why: "窗口还没开：6 岁生日起可申请" + (cut ? "，而且要赶在终止日之前" : "") + tail };
+    if (today >= close) return { ok: false, state: "已过", open, close, why: (cut ? "已到终止日" : "9 岁生日前一天已过，窗口关闭") + tail };
+    return { ok: true, state: "进行中", open, close, why: "正在窗口里：尽早开 RESP 并请机构代申请" + (cut ? "，窗口会被终止日截短" : "") + tail };
   }
 
   // CLB 估算：低收入且 2004 年后出生；按合格年度 500 + 100×(n−1)，到 15 岁、终身 2,000

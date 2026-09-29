@@ -1,5 +1,5 @@
 /* 自动生成，勿手改：python3 courses/resp-rep/tools/build_rules.py
- * 源：research/rules-2026-09-29.jsonl（158 条） */
+ * 源：research/rules-2026-09-29.jsonl（159 条） */
 (function (root) {
   var R = {
 "acesg_first_threshold": {
@@ -188,6 +188,13 @@ null,
 "status": "已生效",
 "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/scholarships/bc-training-and-education-savings-grant",
 "value": 2006
+},
+"bctesg_end": {
+"effective": "2028-04-01",
+"rule": "BC 省 2026 年预算：BCTESG 自 2028-04-01 起终止；过渡安排官方未详；gov.bc.ca 的 BCTESG 页截至 2026-09-29 未更新",
+"status": "已宣布",
+"url": "https://www.bcbudget.gov.bc.ca/2026/pdf/2026_Budget_and_Fiscal_Plan.pdf",
+"value": "2028-04-01"
 },
 "bctesg_no_contrib": {
 "effective": "",
