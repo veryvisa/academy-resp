@@ -1,5 +1,5 @@
 /* 自动生成，勿手改：python3 courses/resp-rep/tools/build_rules.py
- * 源：research/rules-2026-09-29.jsonl（159 条） */
+ * 源：research/rules-2026-09-29.jsonl（176 条） */
 (function (root) {
   var R = {
 "acesg_first_threshold": {
@@ -60,6 +60,13 @@
 "general": 0.2,
 "qc": 0.12
 }
+},
+"aip_resident_subscriber_only": {
+"effective": "",
+"rule": "AIP 只能付给领取时是加拿大居民的订户，且不能同时付给多个订户；非居民订户拿不到 AIP",
+"status": "已生效",
+"url": "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.1.html",
+"value": true
 },
 "aip_rrsp_max": {
 "effective": "",
@@ -199,6 +206,13 @@ null,
 "bctesg_no_contrib": {
 "effective": "",
 "rule": "BCTESG 不需要配比供款；申请时孩子与父母须为 BC 居民、都有 SIN；经 RESP 机构申请",
+"status": "已生效",
+"url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/scholarships/bc-training-and-education-savings-grant",
+"value": true
+},
+"bctesg_no_repay_if_used": {
+"effective": "",
+"rule": "BCTESG 用于合格大专或培训课程的 EAP 时不需要退还；BC 政府页未写迁出 BC 或不读书时的处理",
 "status": "已生效",
 "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/scholarships/bc-training-and-education-savings-grant",
 "value": true
@@ -462,6 +476,13 @@ null,
 "url": "https://www.canada.ca/en/services/benefits/education/education-savings/canada-learning-bond.html",
 "value": "2028-04"
 },
+"clb_auto_not_in_force": {
+"effective": "2028-04",
+"rule": "CLB 自动开户（CES Act 新增 s.6(1.5)、7.01）已于 2024-06-20 御准但尚未生效，预计 2028 年 4 月起实施",
+"status": "已宣布",
+"url": "https://laws-lois.justice.gc.ca/eng/acts/c-3.6/FullText.html",
+"value": true
+},
 "clb_birth_from": {
 "effective": "",
 "rule": "CLB 只给 2004-01-01 及以后出生的孩子",
@@ -560,6 +581,13 @@ null,
 "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/payments-resp.html",
 "value": 4000
 },
+"eap_6_months_after": {
+"effective": "",
+"rule": "学生离开合格课程后 6 个月内仍可领 EAP（前提是离校前本来可以领）",
+"status": "已生效",
+"url": "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.1.html",
+"value": 6
+},
 "eap_6months_after": {
 "effective": "现行",
 "rule": "停止注册后 6 个月内仍可领 EAP（前提：若在停止前一刻支付本可算 EAP）",
@@ -594,6 +622,13 @@ null,
 "status": "已生效",
 "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/payments-resp.html",
 "value": 8000
+},
+"eap_grant_nil_nonresident": {
+"effective": "",
+"rule": "学生领 EAP 时不是加拿大居民，EAP 中 CESG 与 CLB 的部分为零",
+"status": "已生效",
+"url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2005-151/FullText.html",
+"value": true
 },
 "eap_grants_need_resident": {
 "effective": "",
@@ -681,12 +716,26 @@ null,
 "url": "https://www.canada.ca/en/services/benefits/education/education-savings/managing-plan.html",
 "value": 21
 },
+"family_plan_cesg_7200_repay": {
+"effective": "",
+"rule": "单个受益人从 EAP 拿到的 CESG 累计超过 7,200 的部分，受益人要退还",
+"status": "已生效",
+"url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2005-151/FullText.html",
+"value": 7200
+},
 "family_plan_grant_share": {
 "effective": "",
 "rule": "家庭计划内兄弟姐妹可共享 CESG（每人仍受 7,200 上限）；CLB 不能共享",
 "status": "已生效",
 "url": "https://www.canada.ca/en/services/benefits/education/education-savings/managing-plan.html",
 "value": true
+},
+"family_plan_join_after21_nil": {
+"effective": "",
+"rule": "21 岁后才加入家庭计划（此前不是其他家庭计划受益人）的受益人，EAP 中 CESG 部分为零",
+"status": "已生效",
+"url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2005-151/FullText.html",
+"value": 21
 },
 "family_plan_nonsibling_repay": {
 "effective": "现行",
@@ -739,6 +788,23 @@ null,
 "status": "已生效",
 "url": "https://www.canada.ca/en/revenue-agency/services/tax/registered-plans-administrators/pspa/mp-rrsp-dpsp-tfsa-limits-ympe.html",
 "value": 8000
+},
+"foreign_institution_weeks": {
+"effective": "",
+"rule": "境外院校：大学全日制课程连续至少 3 周；其他境外大学、学院、教育机构课程连续至少 13 周",
+"status": "已生效",
+"url": "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.1.html",
+"value": {
+"other_weeks": 13,
+"university_full_time_weeks": 3
+}
+},
+"grant_repay_not_entitled": {
+"effective": "",
+"rule": "受托人拿到不应得的 CESG 或 CLB 要退还；受益人对 EAP 中不应得的补助部分同样要退；应退款是联邦债务，可在法院追讨",
+"status": "已生效",
+"url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2005-151/FullText.html",
+"value": true
 },
 "grants_repaid": {
 "effective": "",
@@ -880,6 +946,27 @@ null,
 "rule": "只有配偶或同居伴侣可以做联名原始供款人（开户人）；家庭计划之外对谁能当开户人一般没有限制",
 "status": "已生效",
 "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/who-a-subscriber.html",
+"value": true
+},
+"joint_subscribers_divorced": {
+"effective": "2023-03-28",
+"rule": "离异或分居的法定父母可以共同开 RESP（为一个或几个孩子），也可以把原共同 RESP 转到另一家机构",
+"status": "已生效",
+"url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4092/registered-education-savings-plans-resps.html",
+"value": true
+},
+"no_transfer_after_aip": {
+"effective": "",
+"rule": "已付过 AIP 的 RESP，其财产不能再直接转入另一个 RESP",
+"status": "已生效",
+"url": "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.1.html",
+"value": true
+},
+"nonresident_beneficiary_no_sin": {
+"effective": "",
+"rule": "非居民受益人若在指定前从未获 SIN，可以不提供 SIN 被指定（仅限与 1999 年前开立计划的转户相关）",
+"status": "已生效",
+"url": "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.1.html",
 "value": true
 },
 "oas_clawback": {
@@ -1099,6 +1186,13 @@ null,
 "contrib": 31
 }
 },
+"resp_rdsp_rollover": {
+"effective": "",
+"rule": "RESP 收益可免附加税转入同一受益人的 RDSP：订户与 RDSP 持有人共同选择；受益人有严重持久智力障碍无法就读，或计划已满足 AIP 条件；受益人须有 DTC 资格、未满 60 岁、是加拿大居民；补助照退",
+"status": "已生效",
+"url": "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.1.html",
+"value": true
+},
 "rrsp_limit_2026": {
 "effective": "2026",
 "rule": "RRSP 2026 年度上限（另受上一年收入 18% 限制）",
@@ -1113,6 +1207,20 @@ null,
 "url": "https://www.canada.ca/en/employment-social-development/services/student-financial-aid/education-savings/resp/resp-promoters/bulletin/notice-2022-966.html",
 "value": true
 },
+"sages_converted_2023": {
+"effective": "2023-09-01",
+"rule": "萨省 SAGES：2023-08-31 为最后处理日，2023-09-01 起 RESP 中的 SAGES 一律转为累积收益",
+"status": "已生效",
+"url": "https://www.canada.ca/en/employment-social-development/services/student-financial-aid/education-savings/resp/resp-promoters/bulletin/notice-2022-966.html",
+"value": true
+},
+"sibling_transfer_over20_repay": {
+"effective": "",
+"rule": "兄弟姐妹的个人计划之间转户，接收计划的受益人超过 20 岁时，CESG 和 CLB 要退还",
+"status": "已生效",
+"url": "https://www.canada.ca/en/revenue-agency/services/forms-publications/publications/rc4092/registered-education-savings-plans-resps.html",
+"value": 20
+},
 "sin_newborn_bundle": {
 "effective": "2026-07-15",
 "rule": "1 岁以下、尚未登记出生的孩子，可在省的新生儿登记服务里同时申请 SIN（各省均有，领地暂无）",
@@ -1126,6 +1234,17 @@ null,
 "status": "已生效",
 "url": "https://www.canada.ca/en/employment-social-development/services/sin/temporary-residents.html",
 "value": true
+},
+"specified_program_def": {
+"effective": "",
+"rule": "非全日制合格课程（specified educational program）：大专层级、连续至少 3 周、每月至少 12 小时；领 EAP 须年满 16 岁",
+"status": "已生效",
+"url": "https://laws-lois.justice.gc.ca/eng/acts/I-3.3/section-146.1.html",
+"value": {
+"hours_per_month": 12,
+"min_age": 16,
+"weeks": 3
+}
 },
 "subscriber_death": {
 "effective": "",
@@ -1153,6 +1272,13 @@ null,
 "rule": "非原始供款人：关系破裂后依法院命令或书面分割协议取得权利的（前）配偶；供款人去世后取得权利的人或遗产；依书面协议取得公共主要照护人权利的个人",
 "status": "已生效",
 "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/who-a-subscriber.html",
+"value": true
+},
+"temp_sin_flagged": {
+"effective": "",
+"rule": "临时 SIN（900 系列）到期后被社会保险登记册标记，此后供款的补助申请被拒（拒绝原因 N），换发新 SIN 并与旧号链接后恢复；旧号交易全部被拒",
+"status": "已生效",
+"url": "https://www.canada.ca/en/employment-social-development/services/student-financial-aid/education-savings/resp/resp-promoters/user-guide/chapter-3.html",
 "value": true
 },
 "tfsa_2026": {
