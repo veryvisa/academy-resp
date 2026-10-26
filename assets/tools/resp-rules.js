@@ -1,5 +1,5 @@
 /* 自动生成，勿手改：python3 courses/resp-rep/tools/build_rules.py
- * 源：research/rules-2026-09-29.jsonl（176 条） */
+ * 源：research/rules-2026-09-29.jsonl（182 条） */
 (function (root) {
   var R = {
 "acesg_first_threshold": {
@@ -213,6 +213,20 @@ null,
 "bctesg_no_repay_if_used": {
 "effective": "",
 "rule": "BCTESG 用于合格大专或培训课程的 EAP 时不需要退还；BC 政府页未写迁出 BC 或不读书时的处理",
+"status": "已生效",
+"url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/scholarships/bc-training-and-education-savings-grant",
+"value": true
+},
+"bctesg_per_child_no_sharing": {
+"effective": "",
+"rule": "BCTESG 按孩子个人申请，每个符合条件的孩子 1,200；BC 政府页没有兄弟姐妹之间调配或共享的规定（CESG 的家庭计划共享规则不适用于 BCTESG）",
+"status": "已生效",
+"url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/scholarships/bc-training-and-education-savings-grant",
+"value": true
+},
+"bctesg_provider_not_offering": {
+"effective": "",
+"rule": "机构不提供 BCTESG 时：BC 页建议另开一个合作机构的 RESP 来申请；页面没有写转户时 BCTESG 如何处理，不能讲转户会让补助被退回政府",
 "status": "已生效",
 "url": "https://www2.gov.bc.ca/gov/content/education-training/k-12/support/scholarships/bc-training-and-education-savings-grant",
 "value": true
@@ -806,6 +820,13 @@ null,
 "url": "https://laws-lois.justice.gc.ca/eng/regulations/SOR-2005-151/FullText.html",
 "value": true
 },
+"grants_multi_plan_order_unstated": {
+"effective": "",
+"rule": "同一孩子在多个 RESP 同时供款时，补助按先到先得或同日平分的规则：官方页未载明，不要讲；官方口径是每名受益人有自己的额度，终身 CESG 不超过 7,200",
+"status": "未载明",
+"url": "https://www.canada.ca/en/services/benefits/education/education-savings/estimating-amounts.html",
+"value": true
+},
 "grants_repaid": {
 "effective": "",
 "rule": "孩子不读书时 CESG 须退还政府；CLB 不读书也须退回",
@@ -1104,6 +1125,13 @@ null,
 "request_within_days": 90
 }
 },
+"qesi_per_beneficiary": {
+"effective": "",
+"rule": "QESI 按受益人累计，所有该受益人的 RESP 合计不超过 3,600；魁北克税务局页面没有兄弟姐妹之间共享的规定",
+"status": "已生效",
+"url": "https://www.revenuquebec.ca/en/citizens/tax-credits/quebec-education-savings-incentive/determining-the-qesi-amount/",
+"value": true
+},
 "qesi_via_provider": {
 "effective": "",
 "rule": "QESI 是可退还税收抵免，直接付进在提供 QESI 的机构开立的 RESP，由受托人向魁北克税务局申请",
@@ -1177,6 +1205,13 @@ null,
 "specified": 40
 }
 },
+"resp_max_years_page_conflict": {
+"effective": "",
+"rule": "canada.ca 管理页同时写 up to 35 years to use the money 与 In general an RESP can stay open for 40 years；CRA 付款页写第 35 年（特定计划第 40 年）。本站统一讲：一般计划最长 35 年，残障受益人的特定计划 40 年，没有 36 年这个说法",
+"status": "已生效",
+"url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/payments-resp.html",
+"value": true
+},
 "resp_plan_life_managing": {
 "effective": "2025-10-16",
 "rule": "开户后最多供款 31 年；canada.ca 家庭页写计划最长可开 40 年、最多 35 年可取款",
@@ -1245,6 +1280,13 @@ null,
 "min_age": 16,
 "weeks": 3
 }
+},
+"stepchild_not_family_plan": {
+"effective": "",
+"rule": "继子女本身不满足家庭计划受益人的血缘或收养关系（除非被收养）；官方页：加入家庭计划的孩子须与供款人有血缘或收养关系",
+"status": "已生效",
+"url": "https://www.canada.ca/en/services/benefits/education/education-savings/managing-plan.html",
+"value": true
 },
 "subscriber_death": {
 "effective": "",
