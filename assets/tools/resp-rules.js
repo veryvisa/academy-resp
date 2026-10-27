@@ -53,12 +53,14 @@
 },
 "aip_extra_tax": {
 "effective": "",
-"rule": "AIP 附加税：普通所得税之外另加 20%（魁北克居民 12%）",
+"rule": "AIP 附加税：普通所得税之外另加 20%；魁北克居民是联邦 12% 加魁北克省 8% 特别税，合计同样 20%",
 "status": "已生效",
 "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/registered-education-savings-plans-resps/payments-resp.html",
 "value": {
 "general": 0.2,
-"qc": 0.12
+"qc": 0.2,
+"qc_federal": 0.12,
+"qc_provincial": 0.08
 }
 },
 "aip_resident_subscriber_only": {
