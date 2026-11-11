@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1336" width="900" height="1336" role="img" aria-labelledby="t d" font-family="'PingFang SC','Hiragino Sans GB','Noto Sans SC','Microsoft YaHei',sans-serif">
+<title id="t">家庭收入不高，RESP 能多拿什么？</title>
+<desc id="d">两份专门给中低收入家庭的钱：存 500 就多配的额外补助，和一分不存也给的学习债券。两份都按报税结果判定，所以先要按时报税。</desc>
+<rect width="900" height="1336" fill="#FAFBFC"/>
+<rect x="0" y="0" width="900" height="142" fill="#12355B"/>
+<text x="40" y="46" font-size="18" fill="#BFD3E6" font-weight="500" text-anchor="start">RESP · 低收入家庭的两份钱</text>
+<text x="40" y="92" font-size="30" fill="#FFFFFF" font-weight="700" text-anchor="start">家庭收入不高，RESP 能多拿什么？</text>
+<rect x="40" y="166" width="820" height="136" rx="16" fill="#FFFFFF" stroke="#12355B" stroke-width="2"/>
+<text x="64" y="198" font-size="17" fill="#0E7C7B" font-weight="700" text-anchor="start">一句话答案</text>
+<text x="64" y="234" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">两份专门给中低收入家庭的钱：存 500 就多配的额外补助，和一分不存也给的学</text>
+<text x="64" y="266" font-size="21" fill="#1F2A37" font-weight="600" text-anchor="start">习债券。两份都按报税结果判定，所以先要按时报税。</text>
+<text x="40" y="350" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">两份钱，各看什么</text>
+<rect x="40.0" y="368" width="401.0" height="204" rx="14" fill="#EAF1F8" stroke="#2F5D8A" stroke-width="1.5"/>
+<text x="58.0" y="401" font-size="19" fill="#2F5D8A" font-weight="700" text-anchor="start">额外补助（A-CESG）</text>
+<circle cx="64.0" cy="420" r="3.2" fill="#2F5D8A"/>
+<text x="76.0" y="425" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">只作用在每年头 500 元供款上</text>
+<circle cx="64.0" cy="450" r="3.2" fill="#2F5D8A"/>
+<text x="76.0" y="455" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">2026 年家庭净收入 58,523 以下再加 20%；</text>
+<text x="76.0" y="479" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">58,523 到 117,045 之间加 10%</text>
+<circle cx="64.0" cy="504" r="3.2" fill="#2F5D8A"/>
+<text x="76.0" y="509" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">不能结转：这一年不存，这一年的就没了</text>
+<rect x="459.0" y="368" width="401.0" height="204" rx="14" fill="#E8F5EE" stroke="#1B7F4B" stroke-width="1.5"/>
+<text x="477.0" y="401" font-size="19" fill="#1B7F4B" font-weight="700" text-anchor="start">学习债券（CLB）</text>
+<circle cx="483.0" cy="420" r="3.2" fill="#1B7F4B"/>
+<text x="495.0" y="425" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">首个合格年度 500，之后每个合格年度 100，终</text>
+<text x="495.0" y="449" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">身最多 2,000</text>
+<circle cx="483.0" cy="474" r="3.2" fill="#1B7F4B"/>
+<text x="495.0" y="479" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">不需要往 RESP 里存钱</text>
+<circle cx="483.0" cy="504" r="3.2" fill="#1B7F4B"/>
+<text x="495.0" y="509" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">按福利年累积到孩子 15 岁；1–3 个孩子的收入</text>
+<text x="495.0" y="533" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">线 58,523（2026-07 至 2027-06）</text>
+<text x="40" y="620" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">每年存 500，能拿多少（2026 年）</text>
+<rect x="40.0" y="638" width="401.0" height="126" rx="14" fill="#E8F5EE" stroke="#1B7F4B" stroke-width="1.5"/>
+<text x="58.0" y="671" font-size="19" fill="#1B7F4B" font-weight="700" text-anchor="start">收入在 58,523 以下</text>
+<circle cx="64.0" cy="690" r="3.2" fill="#1B7F4B"/>
+<text x="76.0" y="695" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">基本补助 100 ＋ 额外补助 100 ＝ 200</text>
+<circle cx="64.0" cy="720" r="3.2" fill="#1B7F4B"/>
+<text x="76.0" y="725" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">等于存款的 40%</text>
+<rect x="459.0" y="638" width="401.0" height="126" rx="14" fill="#FFF4E0" stroke="#B7791F" stroke-width="1.5"/>
+<text x="477.0" y="671" font-size="19" fill="#B7791F" font-weight="700" text-anchor="start">收入在 58,523 到 117,045</text>
+<circle cx="483.0" cy="690" r="3.2" fill="#B7791F"/>
+<text x="495.0" y="695" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">基本补助 100 ＋ 额外补助 50 ＝ 150</text>
+<circle cx="483.0" cy="720" r="3.2" fill="#B7791F"/>
+<text x="495.0" y="725" font-size="16" fill="#1F2A37" font-weight="400" text-anchor="start">等于存款的 30%</text>
+<text x="40" y="812" font-size="22" fill="#12355B" font-weight="700" text-anchor="start">现在该做什么</text>
+<rect x="40" y="830" width="820" height="108" rx="14" fill="#FFFFFF" stroke="#2F5D8A" stroke-width="1.5"/>
+<rect x="54" y="844" width="64.0" height="34" rx="17" fill="#12355B"/>
+<text x="86.0" y="867" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="middle">报税</text>
+<text x="136.0" y="866" font-size="19" fill="#12355B" font-weight="700" text-anchor="start">主要照护人每年报税，并有儿童福利金资格</text>
+<text x="136.0" y="892" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">学习债券要求主要照护人已报税、有 CCB 资格；额外补助看报税算出的家庭净收入。不报税，</text>
+<text x="136.0" y="917" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">这两项无从判定。</text>
+<rect x="40" y="950" width="820" height="83" rx="14" fill="#FFFFFF" stroke="#2F5D8A" stroke-width="1.5"/>
+<rect x="54" y="964" width="64.0" height="34" rx="17" fill="#12355B"/>
+<text x="86.0" y="987" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="middle">开户</text>
+<text x="136.0" y="986" font-size="19" fill="#12355B" font-weight="700" text-anchor="start">选提供这两项的机构，开户表上勾上</text>
+<text x="136.0" y="1012" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">申请要主要照护人（或同住配偶）签名并给 SIN。没钱存也可以先开户，把学习债券申请上。</text>
+<rect x="40" y="1045" width="820" height="83" rx="14" fill="#FFFFFF" stroke="#2F5D8A" stroke-width="1.5"/>
+<rect x="54" y="1059" width="64.0" height="34" rx="17" fill="#12355B"/>
+<text x="86.0" y="1082" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="middle">每年</text>
+<text x="136.0" y="1081" font-size="19" fill="#12355B" font-weight="700" text-anchor="start">有余力就存够 500</text>
+<text x="136.0" y="1107" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">把额外补助拿满；收入高的年份再集中追补基本补助。</text>
+<rect x="40" y="1140" width="820" height="108" rx="14" fill="#FFFFFF" stroke="#2F5D8A" stroke-width="1.5"/>
+<rect x="54" y="1154" width="79.0" height="34" rx="17" fill="#12355B"/>
+<text x="93.5" y="1177" font-size="15" fill="#FFFFFF" font-weight="700" text-anchor="middle">已宣布</text>
+<text x="151.0" y="1176" font-size="19" fill="#12355B" font-weight="700" text-anchor="start">2028 年 4 月起的自动开户（尚未生效）</text>
+<text x="151.0" y="1202" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">2024 年及以后出生、4 岁仍没有 RESP 的合格孩子，政府计划自动开户并存入学习债券；</text>
+<text x="151.0" y="1227" font-size="17" fill="#1F2A37" font-weight="400" text-anchor="start">在此之前仍要自己申请。</text>
+<text x="40" y="1286" font-size="13" fill="#5B6775" font-weight="400" text-anchor="start">依据：canada.ca《RESP 能加多少钱》《加拿大学习债券》《开 RESP》；ESDC 2026 年额外补助收入线通告（notice-2025-1114）。</text>
+<text x="40" y="1306" font-size="13" fill="#5B6775" font-weight="400" text-anchor="start">一般性说明，不替你做税务或投资决定；个案以 ESDC、CRA 的核定和持牌专业人士的意见为准。</text>
+</svg>
